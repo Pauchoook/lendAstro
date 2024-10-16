@@ -1,0 +1,54 @@
+.offer {
+  @include flex-center;
+  flex-direction: column;
+  position: relative;
+  padding: 30px 0px;
+  min-height: 100vh;
+  background: url("../img/offer.jpg") center / cover no-repeat;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(88, 22, 22, 0.7);
+    z-index: -1;
+  }
+  &__body {
+    padding: 32px 24px;
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__title {
+    max-width: 785px;
+    margin-bottom: 30px;
+    &::before {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+    @include tablet {
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+  }
+  &__item {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    span {
+      font-weight: 700;
+      color: var(--red);
+    }
+    @include laptop-min {
+      font-size: 22px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}

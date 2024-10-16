@@ -1,0 +1,8 @@
+.decor {
+  position: absolute;
+  width: 175px;
+  z-index: -1;
+  @include tablet {
+    width: 125px;
+  }
+}

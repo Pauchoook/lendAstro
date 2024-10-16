@@ -1,0 +1,28 @@
+---
+import Hero from "../components/Hero.astro";
+import Ticker from "../components/Ticker.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import About from "../components/About.astro";
+import Reviews from "../components/Reviews.astro";
+import Feeling from "../components/Feeling.astro";
+import Mission from "../components/Mission.astro";
+import Illusions from "../components/Illusions.astro";
+import Reveal from "../components/Reveal.astro";
+import Gift from "../components/Gift.astro";
+import Offer from "../components/Offer.astro";
+---
+
+<MainLayout title="Main">
+  <Ticker />
+	<Hero />
+  <About />
+  <Reviews />
+  <Feeling />
+  <Mission />
+  <Illusions />
+  <div class="wrapper">
+    <Reveal />
+    <Gift />
+  </div>
+  <Offer />
+</MainLayout>

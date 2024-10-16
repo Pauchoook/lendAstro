@@ -1,0 +1,35 @@
+---
+import revewsImg from "../img/reviews.jpg"
+import { Image } from "astro:assets"
+---
+
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2 data-aos="fade-right" class="title title-1 reviews__title">
+      Отзывы тех, кто раскрыл свой потенциал вместе с нами
+    </h2>
+    <div class="swiper reviews__slider">
+      <div class="swiper-wrapper">
+        <a href={revewsImg.src} data-fancybox="reviews" class="swiper-slide reviews__slide">
+          <Image data-aos="flip-left" src={revewsImg} alt="image" class="about__img" />
+        </a>
+        <a href={revewsImg.src} data-fancybox="reviews" class="swiper-slide reviews__slide">
+          <Image data-aos="flip-left" src={revewsImg} alt="image" class="about__img" />
+        </a>
+        <a href={revewsImg.src} data-fancybox="reviews" class="swiper-slide reviews__slide">
+          <Image data-aos="flip-left" src={revewsImg} alt="image" class="about__img" />
+        </a>
+        <a href={revewsImg.src} data-fancybox="reviews" class="swiper-slide reviews__slide">
+          <Image data-aos="flip-left" src={revewsImg} alt="image" class="about__img" />
+        </a>
+        <a href={revewsImg.src} data-fancybox="reviews" class="swiper-slide reviews__slide">
+          <Image data-aos="flip-left" src={revewsImg} alt="image" class="about__img" />
+        </a>
+        <a href={revewsImg.src} data-fancybox="reviews" class="swiper-slide reviews__slide">
+          <Image data-aos="flip-left" src={revewsImg} alt="image" class="about__img" />
+        </a>
+      </div>
+    </div>
+    <div class="reviews__slider-pagination"></div>
+  </div>
+</section>

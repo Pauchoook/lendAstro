@@ -1,0 +1,52 @@
+---
+import decorImg from "../img/decor-big.svg"
+import giftImg from "../img/gift.jpg"
+import { Image } from "astro:assets"
+---
+
+<section class="gift" id="gift">
+  <Image src={decorImg} alt="decor" class="decor gift__decor gift__decor--top" />
+  <Image src={decorImg} alt="decor" class="decor gift__decor gift__decor--bottom" />
+  <div class="container">
+    <div class="gift__head">
+      <h2 data-aos="fade-right" class="title title-1 gift__title">
+        Подари себе яркую жизнь: аудио- подкасты «PROбудись»
+      </h2>
+      <p data-aos="fade-right" class="gift__content">
+        Для этого я создал максимально доступную и простую в понимании программу «PROбудись», из
+        серии аудио-подкастов, в которых мы затронем такие темы, как:
+      </p>
+    </div>
+  </div>
+  <div class="gift__body">
+    <Image data-aos="flip-right" src={giftImg} alt="image" class="gift__img" />
+    <ul class="list gift__list">
+      <li data-aos="fade-right" class="item-circle gift__item">Отношения в паре</li>
+      <li data-aos="fade-right" class="item-circle gift__item">Отношения с родителями</li>
+      <li data-aos="fade-right" class="item-circle gift__item">
+        Как прийти к здоровому <br />
+        и красивому телу
+      </li>
+      <li data-aos="fade-right" class="item-circle gift__item">
+        Освобождение от иллюзий <br />
+        на пути к себе
+      </li>
+      <li data-aos="fade-right" class="item-circle gift__item">
+        Медитативная работа <br />
+        с разрушительными программами
+      </li>
+      <li data-aos="fade-right" class="item-circle gift__item">
+        Глубокая проработка эго программ <br />
+        и запуск мощной энергии
+      </li>
+      <li data-aos="fade-right" class="item-circle gift__item">
+        Финансовая реализация, уровень <br />
+        богатсва, изобилия и достатка
+      </li>
+      <li data-aos="fade-right" class="item-circle gift__item">
+        Услышать себя и начать жить своей <br />
+        счастливой и радостной жизнью
+      </li>
+    </ul>
+  </div>
+</section>

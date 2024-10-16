@@ -1,0 +1,24 @@
+.item-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+  }
+  &::before {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--primary);
+    left: 0;
+  }
+  &::after {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary);
+    left: 4px;
+  }
+}

@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import decorImg from "../img/decor.svg"
+import feelingImg from "../img/feeling.jpg"
+---
+
+<section class="feeling">
+  <div class="container feeling__container">
+    <Image src={decorImg} alt="image" class="decor feeling__decor"  />
+    <div class="body-section feeling__body">
+      <div class="feeling__info">
+        <h2 data-aos="fade-right" class="title title-1 feeling__title">Я знаю это чувство, когда: </h2>
+        <ul class="list feeling__list">
+          <li data-aos="fade-right" class="item-circle feeling__item">Нет сил и энергии что-либо делать </li>
+          <li data-aos="fade-right" class="item-circle feeling__item">Все есть, но радости это не приносит </li>
+          <li data-aos="fade-right" class="item-circle feeling__item">Не получается сбросить лишний вес </li>
+          <li data-aos="fade-right" class="item-circle feeling__item">Не можешь понять, кто ты и для чего </li>
+          <li data-aos="fade-right" class="item-circle feeling__item">Проблемы в финансах </li>
+          <li data-aos="fade-right" class="item-circle feeling__item">Не чувствуешь себя нужным и <br> важным в отношениях </li>
+          <li data-aos="fade-right" class="item-circle feeling__item">Постоянная борьба с миром <br> и непреодолимые трудности </li>
+        </ul>
+      </div>
+      <Image data-aos="flip-right" src={feelingImg} alt="image" class="feeling__img"  />
+    </div>
+  </div>
+</section>

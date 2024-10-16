@@ -1,0 +1,28 @@
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+.btn-primary {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  border-radius: 24px;
+  padding: 15px 47px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+  @include hover {
+    border-color: white;
+    background-color: transparent;
+  }
+  @include tablet {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+}

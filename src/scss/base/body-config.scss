@@ -1,0 +1,9 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.body {
+  font-weight: 500;
+  color: white;
+  background-color: var(--black);
+}

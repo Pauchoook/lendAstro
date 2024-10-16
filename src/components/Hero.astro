@@ -1,0 +1,31 @@
+---
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+import heroImg from "../img/hero.png"
+import decorImg from "../img/decor.svg"
+---
+
+<seciton class="hero">
+  <div class="container hero__container">
+    <Image src={decorImg} alt="decor" class="decor hero__decor"  />
+    <div>
+      <h1 data-aos="fade-right" class="title title-1 hero__title">
+        Распечатай силу и потенциал, гармонизируй внутренний мир и создай
+        желаемые результаты по всем сферам жизни за 2 месяца
+      </h1>
+      <div data-aos="fade-down" class="nav">
+        <a href="#reviews" class="btn-primary nav__btn anchor"
+          >Хочу узнать больше</a
+        >
+        <a
+          href="https://www.instagram.com/ya_vernulsia?igsh=ZnF6ZHl4MGprbDFr"
+          target="_blank"
+          class="nav__social-btn"
+        >
+        <Icon name="inst" class="nav__social-icon" />
+        </a>
+      </div>
+    </div>
+    <Image data-aos="fade-left" src={heroImg} alt="image" class="hero__img"  />
+  </div>
+</seciton>

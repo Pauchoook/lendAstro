@@ -1,0 +1,21 @@
+---
+import decorImg from "../img/decor.svg"
+import aboutImg from "../img/about.jpg"
+import { Image } from "astro:assets"
+---
+
+<section class="about">
+  <Image src={decorImg} alt="decor" class="decor about__decor about__decor--left" />
+  <Image src={decorImg} alt="decor" class="decor about__decor about__decor--right" />
+  <div class="container">
+    <div class="body-section about__body">
+      <Image data-aos="flip-left" src={aboutImg} alt="image" class="about__img" />
+      <p data-aos="fade-up" class="about__content">
+        Меня зовут Дмитрий, и 7 лет назад я начал свой путь духовного развития, который полностью
+        изменил мою жизнь. Сегодня я использую этот опыт, чтобы помогать другим раскрывать их
+        внутренний потенциал и достигать изобилия. <span>Моя миссия</span> — поддерживать людей на пути к
+        самопознанию и гармонии, помогая им развиваться и добиваться успеха в жизни.
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+import decorImg from "../img/decor.svg"
+import arrowImg from "../img/arrow.svg"
+import afterImg from "../img/after.jpg"
+import beforeImg from "../img/before.jpg"
+---
+
+<section class="mission">
+  <div class="container mission__container">
+    <Image src={decorImg} alt="image" class="decor mission__decor mission__decor--left"  />
+    <Image src={decorImg} alt="image" class="decor mission__decor mission__decor--right"  />
+    <h2 data-aos="fade-right" class="title title-1 mission__title">Мой путь и миссия</h2>
+    <div class="mission__body">
+      <div class="mission__item">
+        <div data-aos="zoom-in-right" class="mission__item-body">
+          <h2 class="title title-2 mission__item-title">Моя жизнь до (25 лет)</h2>
+          <Image src={beforeImg} alt="image" class="mission__img"  />
+        </div>
+        <p data-aos="fade-up" class="mission__content">
+          Я раньше двигался как корабль с оторванной мачтой, плыву но хер знает куда и настоящего
+          счастья на горизонте нет.
+        </p>
+      </div>
+      <Image src={arrowImg} alt="image" class="mission__arrow"  />
+      <div class="mission__item">
+        <div data-aos="zoom-in-left" class="mission__item-body">
+          <h2 class="title title-2 mission__item-title">Жизнь после (41 год)</h2>
+          <Image src={afterImg} alt="image" class="mission__img"  />
+        </div>
+        <p data-aos="fade-up" class="mission__content">
+          Но теперь, после пробуждения души, я знаю что такое жизнь в кайф, у меня нет эмоциональных
+          качелей и я молодею с каждым днём благодаря внутренней работе и работе с телом. В 41 я
+          себя чувствую как в 18 не чувствовал и я только начал жить.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
